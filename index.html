@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick= showmadal()>click</button>
+    <div class="madal-wrapper">
+        <div class="madal">
+            <h1>hello.. <button onclick= closemadal()>ok</button></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi repellendus quo, laboriosam ab saepe reiciendis sit inventore accusantium quia corporis qui, rem aliquid fuga. Reiciendis perspiciatis laboriosam incidunt soluta perferendis.
+            Qui, obcaecati.
+            </p>
+
+            <script>
+                function showmadal(){
+                   const madalwrapper= document.querySelector ('.madal-wrapper')
+                   madalwrapper.style.display = 'block'
+                }
+                function closemadal(){
+                    const closemadal=document.querySelector('.madal-wrapper')
+                    closemadal.style.display= 'none'
+                }
+
+            </script>
+        </div>
+    </div>
+</body>
+</html>
